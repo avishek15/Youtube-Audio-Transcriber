@@ -1,3 +1,4 @@
+````markdown
 # YouTube Audio Downloader and Transcriber
 
 ## Introduction
@@ -15,6 +16,40 @@ This project allows you to download the audio from a YouTube video and transcrib
 
 - Python 3.7 or higher
 - A compatible CUDA-enabled GPU (optional, for hardware acceleration)
+- `ffmpeg` for handling multimedia conversions
+
+### Installing `ffmpeg`
+
+- **Windows**:
+
+  ```bash
+  choco install ffmpeg
+  ```
+````
+
+- **Mac**:
+
+  ```bash
+  brew install ffmpeg
+  ```
+
+- **Linux (Ubuntu/Debian)**:
+
+  ```bash
+  sudo apt-get install ffmpeg
+  ```
+
+- **Linux (Fedora)**:
+
+  ```bash
+  sudo dnf install ffmpeg
+  ```
+
+- **Linux (CentOS)**:
+
+  ```bash
+  sudo yum install ffmpeg
+  ```
 
 ## Steps to Run the Project
 
@@ -89,6 +124,7 @@ Open your web browser and navigate to the Streamlit interface (usually at `http:
 
 - **Whisper Model Loading**: If you encounter issues with the `whisper` model loading, ensure that the `whisper` package is correctly installed and that the model files are accessible.
 - **Hardware Acceleration**: If you experience slow performance, ensure that your GPU is correctly recognized and that the hardware-accelerated PyTorch is installed.
+- **ffmpeg Installation**: If you encounter issues with multimedia conversions, ensure that `ffmpeg` is correctly installed and accessible from your system's PATH.
 
 ## License
 
@@ -99,7 +135,15 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [Whisper](https://github.com/openai/whisper) - OpenAI's automatic speech recognition system.
 - [FastAPI](https://fastapi.tiangolo.com/) - A modern, fast (high-performance) web framework for building APIs with Python 3.7+.
 - [Streamlit](https://streamlit.io/) - The fastest way to build and share data apps.
-
----
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - A fork of youtube-dl with additional features and fixes.
+- [ffmpeg](https://ffmpeg.org/) - A powerful multimedia framework for handling audio and video processing.
 
 Feel free to contribute to this project by submitting issues or pull requests. Happy transcribing!
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue if you encounter any problems or have suggestions for improvements.
+
+## Contact
+
+For any questions or feedback, please reach out to the maintainers of this project.
