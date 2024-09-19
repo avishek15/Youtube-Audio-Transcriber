@@ -1,4 +1,3 @@
-````markdown
 # YouTube Audio Downloader and Transcriber
 
 ## Introduction
@@ -25,7 +24,6 @@ This project allows you to download the audio from a YouTube video and transcrib
   ```bash
   choco install ffmpeg
   ```
-````
 
 - **Mac**:
 
